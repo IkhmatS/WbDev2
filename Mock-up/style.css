@@ -3,8 +3,9 @@
 body {
   background-color: #f5e9db;
 }
-#background-image {
+.background-image {
   background-image: url("mockImgs/Reading-List+.jpg");
+
 }
 #girl-carry {
   /*top: ;*/
@@ -13,7 +14,17 @@ body {
 #girl-reading {
   margin-left: 10%;
 }
+#search-bar {
+  text-align: right;
+  float: right;
+}
+.nav-link {
+  float: left;
+  display: inline;
+  text-align: center;
+}
+/*
 #sign-up {
 }
 #contact-link {
-}
+}*/
