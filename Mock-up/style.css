@@ -1,0 +1,19 @@
+/** @format */
+
+body {
+  background-color: #f5e9db;
+}
+#background-image {
+  background-image: url("mockImgs/Reading-List+.jpg");
+}
+#girl-carry {
+  /*top: ;*/
+  margin-left: 15%;
+}
+#girl-reading {
+  margin-left: 10%;
+}
+#sign-up {
+}
+#contact-link {
+}
