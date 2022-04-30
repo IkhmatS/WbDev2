@@ -5,7 +5,6 @@ body {
 }
 .background-image {
   background-image: url("mockImgs/Reading-List+.jpg");
-
 }
 #girl-carry {
   /*top: ;*/
@@ -22,6 +21,8 @@ body {
   float: left;
   display: inline;
   text-align: center;
+  margin: 6px;
+  padding: 6px;
 }
 /*
 #sign-up {
