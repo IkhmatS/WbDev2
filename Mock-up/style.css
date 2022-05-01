@@ -3,6 +3,7 @@
 body {
   background-color: #f5e9db;
   font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
 }
 .background-image {
   background-image: url("mockImgs/Reading-List+.jpg");
@@ -12,43 +13,80 @@ body {
   margin-left: 15%;
 }
 #girl-reading {
-  margin-left: 10%;
+  margin-right: 10%;
 }
 #search-bar {
   text-align: right;
   float: right;
+  padding: 4px;
+  margin: 25px;
 }
 nav {
   background: rgb(72, 40, 4);
   height: 80px;
   width: 100%;
 }
-nav ul{
+nav ul {
   float: right;
   margin-right: 20px;
 }
+/*nav ul li a{
+  color: white;
+}*/
 .nav-link {
   float: left;
-  display: inline;
+  display: inline-block;
+  line-height: 70px;
   text-align: center;
-  margin: 6px;
+  margin: 0 2px;
   padding: 6px;
-}
-label.logo{
   color: white;
-font-size: 35px;
-line-height: 80px;
-padding: 0 100px;
-font-weight: bold;
-
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
-
+.nav-link:hover{
+color: #bca993;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+#sign-up{
+  font-size: 25px;
+}
+#contact-link{
+  font-size: 25px;
+}
+#whats-happen{
+  font-size: 20px;
+}
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+}
+
+#back-book{
+  background-image: url("mockImgs/Reading-List+.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#lib-name{
+  font-size: 47px;
+  padding: 30px;
+  margin: 5px;
+  font-family:'Times New Roman', Times, serif;
+  color: rgba(255, 255, 255, 0.815);
+  /*#5c5b45*/
 }
 /*nav ul{
   list-style-type: none;
@@ -62,3 +100,29 @@ font-weight: bold;
 }
 #contact-link {
 }*/
+/*Content for the book page, this page has been added but from another source. It's the same but a bit different*/
+/** @format */
+
+#this-book {
+  /* position: absolute;
+  right: 150px; */
+  width: 300px;
+  height: 412px;
+  border: 8px solid rgb(20, 20, 20);
+  padding: 20px;
+}
+#first-title {
+  bottom: 5px;
+  margin-left: 15%;
+}
+#novel-author {
+  bottom: 5px;
+  margin-left: 19%;
+}
+
+/*#top-title {
+  font-family: Franklin Gothic Medium;
+  color: rgb(255, 255, 255);
+  font: 400px;
+}*/
+
