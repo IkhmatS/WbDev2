@@ -125,4 +125,48 @@ label.logo {
   color: rgb(255, 255, 255);
   font: 400px;
 }*/
+#sign-up:link, #sign-up:visited {
+  background-color: none;
+  color: white;
+  padding: 14px 25px;
+  margin: 90px;
+  border-style: solid;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  left: 0px;
+  right: 600px;
+}
 
+#sign-up:hover, #sign-up:active {
+  background-color: #bca993;
+}
+/**/
+#con-tacts:link, #con-tacts:visited{
+   background-color: #5c5b45;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-width: 25px 10px 4px 35px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 600px;
+}
+#con-tacts:hover, #con-tacts:active {
+  background-color: #bca993;
+}
+#whats-happen{
+  font-size: 20px;
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  right: 600px;
+  color:#bca993;
+}
