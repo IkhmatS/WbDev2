@@ -8,12 +8,10 @@ body {
 .background-image {
   background-image: url("mockImgs/Reading-List+.jpg");
 }
-#girl-carry {
-  /*top: ;*/
-  margin-left: 15%;
-}
-#girl-reading {
-  margin-right: 10%;
+
+#girl-infront {
+  margin-right: 150px;
+  padding-right: 20px;
 }
 #search-bar {
   text-align: right;
@@ -45,8 +43,8 @@ nav ul {
   text-transform: uppercase;
   border-radius: 3px;
 }
-.nav-link:hover{
-color: #bca993;
+.nav-link:hover {
+  color: #bca993;
 }
 label.logo {
   color: white;
@@ -55,13 +53,13 @@ label.logo {
   padding: 0 100px;
   font-weight: bold;
 }
-#sign-up{
+#sign-up {
   font-size: 25px;
 }
-#contact-link{
+#contact-link {
   font-size: 25px;
 }
-#whats-happen{
+#whats-happen {
   font-size: 20px;
 }
 * {
@@ -72,7 +70,7 @@ label.logo {
   box-sizing: border-box;
 }
 
-#back-book{
+#back-book {
   background-image: url("mockImgs/Reading-List+.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
@@ -80,11 +78,11 @@ label.logo {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-#lib-name{
+#lib-name {
   font-size: 47px;
   padding: 30px;
   margin: 5px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: rgba(255, 255, 255, 0.815);
   /*#5c5b45*/
 }
@@ -125,7 +123,8 @@ label.logo {
   color: rgb(255, 255, 255);
   font: 400px;
 }*/
-#sign-up:link, #sign-up:visited {
+#sign-up:link,
+#sign-up:visited {
   background-color: none;
   color: white;
   padding: 14px 25px;
@@ -140,12 +139,14 @@ label.logo {
   right: 600px;
 }
 
-#sign-up:hover, #sign-up:active {
+#sign-up:hover,
+#sign-up:active {
   background-color: #bca993;
 }
 /**/
-#con-tacts:link, #con-tacts:visited{
-   background-color: #5c5b45;
+#con-tacts:link,
+#con-tacts:visited {
+  background-color: #5c5b45;
   color: white;
   padding: 14px 20px;
   margin: 15px;
@@ -159,14 +160,20 @@ label.logo {
   left: 0;
   right: 600px;
 }
-#con-tacts:hover, #con-tacts:active {
+#con-tacts:hover,
+#con-tacts:active {
   background-color: #bca993;
 }
-#whats-happen{
+#whats-happen {
   font-size: 20px;
   position: absolute;
   bottom: 40px;
   left: 80px;
   right: 600px;
-  color:#bca993;
+  color: #bca993;
+}
+#event-content {
+  font-size: 20px;
+  bottom: 5px;
+  margin-left: 19%;
 }
