@@ -224,8 +224,10 @@ label.logo {
 /*This is where the event contact page stops*/
 /*#f5e9db*/
 /*This is a test of for the socials bar that is put on the left side of the page*/
-
-body {margin:0;height:2000px;}
+body {
+  margin: 0;
+  height: 2000px;
+}
 
 .icon-bar {
   position: fixed;
@@ -249,12 +251,12 @@ body {margin:0;height:2000px;}
 }
 
 .facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
