@@ -21,11 +21,51 @@
         font-weight: bold;
       }
       section {
-        background: #5ac88b;
+        background-color: #5ac88b;
+      }
+      
+
+       ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;}
+        .nav-link {
+        padding: 5px;
+        margin: 4px;
+        border: 2px solid black;
+        color: #eeffee;
+        background-color: #003100;
+      }
+      .nav-link li {
+        display: inline-block;
       }
     </style>
   </head>
   <body>
+     <nav>
+        <ul>
+          <!--Put anchors around lists as best practice, due to having better accessibility-->
+          <a href="index.html" class="nav-link"><li>Div and Spans Page</li></a>
+          <a href="internal-css.html" class="nav-link"
+            ><li>Internal CSS Page</li></a
+          >
+          <a href="external-css.html" class="nav-link"
+            ><li>External CSS Page</li></a
+          >
+          <a href="testing-cascading.html" class="nav-link"
+            ><li>Cascading Page</li></a
+          >
+          <a href="classes-and-ids.html" class="nav-link"
+            ><li>Classes and Ids Page</li></a
+          >
+          <a href="div-and-span.html" class="nav-link"
+            ><li>Div and Spans Page</li></a
+          >
+        </ul>
+      </nav>
     <nav></nav>
     <main>
       <h1>Background and text Page</h1>
