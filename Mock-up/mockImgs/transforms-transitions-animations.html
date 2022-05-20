@@ -1,0 +1,177 @@
+<!-- @format -->
+<!--Create something new with the same properties-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transforms transitions animations Page</title>
+    <style>
+      body {
+        color: #cab0eb;
+        font-size: 20px;
+        background-image: linear-gradient(to top left, #6441a5, #2a0845);
+        margin-top: 5%;
+        margin-bottom: 10%;
+        background-color: #291541;
+      }
+      h1 {
+        font-size: 48px;
+        text-align: center;
+        background-image: url("code.jpg");
+        /*you can also make a mirror effect by using the rotation X make it look backwards*/
+
+        /*Use prefixes to make sure that this is supported for older browsers*/
+        /*This rotates your text*/
+        /*This makes your text look italizied*/
+        /*Transform elements include scale, rotate, skew, translate*/
+
+        -o-transform: scale(0.75, 2) rotateY (50deg) rotateX(180deg);
+        -moz-transform: scale(0.75, 2);
+        -ms-transform: scale(0.75, 2);
+        -webkit-transform: scale(0.75, 2);
+        transform: scale(0.75, 2);
+        /*filter: blur(2px);*/
+      }
+      div p {
+        font-weight: bold;
+        padding: 5px;
+        marging: 10px;
+        bordrer: 2px solid rgb(221, 177, 241);
+      }
+      /*div {
+        width: 320px;
+        padding: 10px;
+        border: 5px solid rgb(89, 12, 139);
+        margin: 0;
+    
+        position: relative;
+        top: 50%;
+
+        -ms-transform: translate(-50%);
+        -o-transform:translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-trnasform:translateY(-50%);
+        transform:translateY(-50%)%
+    }*/
+
+      /* section {
+        background-color: #561574;
+      }*/
+
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+
+      .nav-link {
+        padding: 19px;
+        margin: 17px;
+        border: 3px solid black;
+        color: #eeffee;
+        background-color: #531463;
+        transition: transform 0.5s ease-in-out;
+      }
+      .nav-link li {
+        display: inline-block;
+      }
+      p {
+        margin-top: 0%;
+        margin-bottom: 0%;
+      }
+      #img-web {
+        width: 320px;
+        padding: 10px;
+        border: 8px solid rgb(41, 40, 40);
+        margin: 0;
+      }
+      /*Credit to W3schools */
+      .nav-link:link,
+      .nav-link:visited {
+        background-color: #6619af;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .nav-link:hover,
+      .nav-link:active {
+        background-color: rgb(201, 162, 216);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!--Put anchors around lists as best practice, due to having better accessibility-->
+        <a href="index.html" class="nav-link"><li>Div and Spans Page</li></a>
+        <a href="internal-css.html" class="nav-link"
+          ><li>Internal CSS Page</li></a
+        >
+        <a href="external-css.html" class="nav-link"
+          ><li>External CSS Page</li></a
+        >
+        <a href="testing-cascading.html" class="nav-link"
+          ><li>Cascading Page</li></a
+        >
+        <a href="classes-and-ids.html" class="nav-link"
+          ><li>Classes and Ids Page</li></a
+        >
+        <a href="transforms-transitions-animations.html" class="nav-link"
+          ><li>transformanimations Page</li></a
+        >
+      </ul>
+    </nav>
+    <main>
+      <!--the first numder is for the shadow to go on the right or left and the second is for when it goes up or down and lastly the HEX code for color, a third number can be added and it is a blur-->
+      <h1 style="text-shadow: 2px 3px #693692, 0px 0.3px 0px #531463">
+        Background and text Page
+      </h1>
+      <section>
+        <!--<img
+          src="httml.png"
+          id="img-web"
+          alt="An image demonstrating the different funtionalities"
+          width="100"
+          height="500"
+        />-->
+
+        <div>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+          <p>This is content</p>
+          <p>This is more content and more content</p>
+        </div>
+        <p>
+          This is content that can be filled in with something.. I don't know
+          what would go here but it's here and you can change it.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
