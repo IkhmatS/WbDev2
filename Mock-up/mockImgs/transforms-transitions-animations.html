@@ -15,7 +15,40 @@
         margin-top: 5%;
         margin-bottom: 10%;
         background-color: #291541;
+
+        /*Allows us to define a name for our animation so that multiple anomations can be created for single webpage and the animation can be used for seversl different elements we wanr*/
+        animation-name: fade-in;
+
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+
+        animation-delay: 0.5s;
+
+        /*animation-iteration-count: 2;*/
+
+        animation-direction: normal;
+
+        /*animation-fill-mode: ;*/
+
+        animation-fill-mode: forwards;
+        animation: fade-in 1s ease-in 0.5s forwards;
+        -o-animation: fade-in 1s ease-in 0.5s forwards;
+        -moz-animation: fade-in 1s ease-in 0.5s forwards;
+        -webkit-animation: fade-in 1s ease-in 0.5s forwards;
+
+        opacity: 0;
       }
+      @keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
       h1 {
         font-size: 48px;
         text-align: center;
@@ -37,8 +70,8 @@
       div p {
         font-weight: bold;
         padding: 5px;
-        marging: 10px;
-        bordrer: 2px solid rgb(221, 177, 241);
+        margin: 10px;
+        border: 2px solid rgb(221, 177, 241);
       }
       /*div {
         width: 320px;
