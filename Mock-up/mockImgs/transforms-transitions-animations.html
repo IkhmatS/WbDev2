@@ -11,7 +11,7 @@
       body {
         color: #cab0eb;
         font-size: 20px;
-        background-image: linear-gradient(to top left, #6441a5, #2a0845);
+        background-image: linear-gradient(to top left, #4389a2, #5c258d);
         margin-top: 5%;
         margin-bottom: 10%;
         background-color: #291541;
@@ -40,8 +40,8 @@
       }
       @keyframes fade-in {
         from {
-          position: relative;
-          top: 200px;
+          transform: translateY(300px);
+          opacity: 0;
         }
         to {
           top: 0;
@@ -55,6 +55,9 @@
         background-image: url("code.jpg");
         /*you can also make a mirror effect by using the rotation X make it look backwards*/
 
+        /*Allows you to hide the element, but the space used by the element stays*/
+        visibility: hidden;
+
         /*Use prefixes to make sure that this is supported for older browsers*/
         /*This rotates your text*/
         /*This makes your text look italizied*/
@@ -66,7 +69,24 @@
         -webkit-transform: scale(0.75, 2);
         transform: scale(0.75, 2);
         /*filter: blur(2px);*/
+        /*We're going to vreate an animation that swivels the heading in when the page loads*/
+
+        -o-animation: swivel 1s ease-in-out 2s normal forwards;
+        -moz-animation: swivel 1s ease-in-out 2s normal forwards;
+        -webkit-animation: swivel 1s ease-in-out 2s normal forwards;
+        animation: swivel 1s ease-in-out 2s normal forwards;
       }
+
+      @keyframes swivel {
+        from {
+          transform: rotateY(90deg);
+        }
+        to {
+          transform: rotateY(0deg);
+          visibility: visible;
+        }
+      }
+
       div p {
         font-weight: bold;
         padding: 5px;
@@ -74,24 +94,24 @@
         border: 2px solid rgb(221, 177, 241);
       }
       /*div {
-        width: 320px;
-        padding: 10px;
-        border: 5px solid rgb(89, 12, 139);
-        margin: 0;
-    
-        position: relative;
-        top: 50%;
+          width: 320px;
+          padding: 10px;
+          border: 5px solid rgb(89, 12, 139);
+          margin: 0;
 
-        -ms-transform: translate(-50%);
-        -o-transform:translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -webkit-trnasform:translateY(-50%);
-        transform:translateY(-50%)%
-    }*/
+          position: relative;
+          top: 50%;
+
+          -ms-transform: translate(-50%);
+          -o-transform:translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -webkit-trnasform:translateY(-50%);
+          transform:translateY(-50%)%
+      }*/
 
       /* section {
-        background-color: #561574;
-      }*/
+          background-color: #561574;
+        }*/
 
       ul {
         list-style: none;
