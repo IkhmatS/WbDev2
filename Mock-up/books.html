@@ -1,12 +1,52 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Finder</title>
+    <title>la Bibliothèque d'Héritage</title>
+    <header>
+      <nav>
+        <label class="logo">LBH</label>
+        <input id="search-bar" type="text" placeholder="Search.." />
+        <!--These are where all the links are placed for the nav bar, this will be put across all pages of the site. These are placed on the right side of the site.-->
+        <ul>
+          <a href="index.html" class="nav-link"><li>Home</li></a>
+          <a href="books.html" class="nav-link"><li>Books</li></a>
+          <a href="events.html" class="nav-link"><li>Events</li></a>
+          <a href="contact.html" class="nav-link"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+  </head>
+  <body>
+    <!--This is the title for the Book finder which will tell you where you are, this page is used to give suggestions and ipdate you on new books, old classics and any genre that you are looking for. -->
+    <h1 id="book-find">Book Finder</h1>
+
+    <section>
+
+
+        
+    </section>
+
+    <!--SLIDESHOW AUTOMATIC CODE
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}-->
+  </body>
 </html>
