@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       /*This is the code used to make the slideshow, credit to 3 schools for reference code. This code consists a few modifications to fit my idea*/
-      .mySlides {
+      .slideShow {
         display: none;
+        width: 70%;
+        height: 450px;
       }
       .w3-left,
       .w3-right,
@@ -44,17 +46,63 @@
     <h1 id="book-find">Book Finder</h1>
     <!--For the ecommerce referencehttps://www.youtube.com/watch?v=gW-q6G9KYTg-->
     <section>
-      <img class="mySlides" src="img_snowtops.jpg" />
-      <img class="mySlides" src="img_lights.jpg" />
-      <img class="mySlides" src="img_mountains.jpg" />
-      <img class="mySlides" src="img_forest.jpg" />
+      <!--ATTENTION: This code is credited to W3schools on their slideshow demo, only slight modifications have been made to fit in to what I want it to look like-->
+      <!--All images used in the sideshow-->
+      <div class="w3-content w3-display-container">
+        <img class="slideShow" src="mockImgs/cartoon.png" />
+        <img class="slideShow" src="mockImgs/moviebook.png" />
+        <img class="slideShow" src="mockImgs/mysterbook.png" />
+        <img class="slideShow" src="mockImgs/romancebooks.png" />
+        <!--The buttons placed on the bottom of the Slideshow to navigate to both previous and next-->
+        <button class="slide-button slide-display-left" onclick="plusDivs(-1)">
+          &#10094; Prev
+        </button>
+        <button class="slide-button slide-display-right" onclick="plusDivs(+1)">
+          Next &#10095;
+        </button>
+        <!--Java used to make the buttons funtion, they will make the buttons on the bottom to next or previous whenever you click on them-->
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
-        &#10094;
-      </button>
-      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
-        &#10095;
-      </button>
+        function plusDivs(n) {
+          showDivs((slideIndex += n));
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slideShow");
+          if (n > x.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+        /*Java used for an animation effect of making the images go to next automatically*/
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slideShow");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {
+            myIndex = 1;
+          }
+          x[myIndex - 1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+      </script>
+      <!--Just in case of future use of wanting to add a caption in a different area: classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright, left, right or middle):-->
     </section>
 
     <!--SLIDESHOW AUTOMATIC CODE
