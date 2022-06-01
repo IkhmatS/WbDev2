@@ -284,16 +284,32 @@ body {
 
 /*For teh slideshow*/
 /*This is the display for the caption text on the slideshow. Each one will have a different captions according to the image you would like to present.*/
-#cap-text {
-  color: #f2f2f2;
-  font-size: 15px;
+.cap-text {
+  color: #c4c3c3;
+  font-size: 30px;
   padding: 8px 12px;
   position: absolute;
+  top: 300px;
   bottom: 8px;
   width: 100%;
   text-align: center;
 }
+
 /*.slide-button{
 }*/
 /**/
 /**/
+.slide-button {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(10, 7, 7);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
