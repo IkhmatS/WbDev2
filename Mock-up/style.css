@@ -282,6 +282,18 @@ body {
 /*Book Finder section*/
 /**/
 
-/**/
+/*For teh slideshow*/
+/*This is the display for the caption text on the slideshow. Each one will have a different captions according to the image you would like to present.*/
+#cap-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/*.slide-button{
+}*/
 /**/
 /**/
