@@ -315,15 +315,15 @@ body {
 }
 /*Gallery styles*/
 div.our-books {
-  margin: 30px;
-  border: 3px solid #ccc;
+  margin: 50px;
+  /*border: 3px solid #ccc;*/
   float: left;
   width: 180px;
 }
 
-div.our-books:hover {
-  border: 1px solid #777;
-}
+/*div.our-books:hover {
+  border: 1px solid rgb(52, 43, 2);
+}*/
 
 div.our-books img {
   width: 100%;
@@ -333,5 +333,77 @@ div.our-books img {
 div.descri-tion {
   padding: 15px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  color: #bca993;
+}
+
+.our-books:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*Button code for the help button*/
+/*#help-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+}
+#help-btn {
+  width: 300px;
+  height: 100px;
+  border: none;
+  color: #5c5b45;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+  border: 3px solid white;
+  position: relative;
+  z-index: 1;
+}
+#help-btn:hover {
+  color: #9e9d82;
+  cursor: pointer;
+}
+
+#help-btn::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  bottom: 5px;
+  left: 70%;
+  right: 0%;
+  opacity: 0;
+  content: "";
+  background-color: #bca993;
+}
+#help-btn:hover::before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}*/
+/*Contact page information*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #5c5b45;
+  background: url(mockImgs/flowers.jpg);
+  background-size: cover;
 }
