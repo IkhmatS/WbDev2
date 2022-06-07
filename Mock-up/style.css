@@ -349,27 +349,46 @@ div.descri-tion {
   font-family: "Times New Roman", Times, serif;
 }
 /*Style for the paragraph under the Contact Us title */
-#contact-para {
+.contact-para {
+  margin: 30px;
   text-align: center;
   line-height: normal;
   letter-spacing: 3px;
   word-spacing: 3px;
   /*This animation is a typewriting animations where it will have the effect of typing. It will adjusts as it sizes differently. The text will dissapear then comeback when it is its turn to pop up. They will go after one another until the all the sentences have been typed out.*/
-  /*Animation has not been able to work due to some complications regarding the code used*/
+
   animation: type 3s steps(22);
-  overflow: hidden;
-  white-space: nowrap;
+
   font-family: "Times New Roman", Times, serif;
   border-right: 4px solid;
   width: 22ch;
 }
-
-@keyframes type {
-  0% {
-    width: 0ch;
+.line {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.contact-para {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+/*The letters will appear some at a time till it reaches a certain place or will stop when all text has presneted*/
+@keyframes typewriter {
+  from {
+    width: 0;
   }
-  100% {
-    width: 22ch;
+  to {
+    width: 40em;
+  }
+}
+
+@keyframes blankTextCursor {
+  from {
+    border-right-color: #bca993;
+  }
+  to {
+    border-right-color: transparent;
   }
 }
 
