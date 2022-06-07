@@ -369,6 +369,7 @@ div.descri-tion {
   overflow: hidden;
   transform: translateY(-50%);
 }
+/*This has been sperated due to compliction of myslef knowing where I put it, This is part of the the other half of it its judt in a different place for me to be able to see it properly*/
 .contact-para {
   animation: typewriter 4s steps(40) 1s 1 normal both,
     blinkTextCursor 500ms steps(40) infinite normal;
