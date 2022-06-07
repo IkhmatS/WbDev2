@@ -355,7 +355,7 @@ div.descri-tion {
   line-height: normal;
   letter-spacing: 3px;
   word-spacing: 3px;
-  /*This animation is a typewriting animations where it will have the effect of typing. It will adjusts as it sizes differently. The text will dissapear then comeback when it is its turn to pop up. They will go after one another until the all the sentences have been typed out.*/
+  /*This animation is a typewriting animations where it will have the effect of typing. It will adjusts as it sizes differently. The text will dissapear then comeback when it is its turn to pop up. They will go after one another until the all the sentences have been typed out. Credit to */
 
   animation: type 3s steps(22);
 
