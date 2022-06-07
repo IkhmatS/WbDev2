@@ -478,6 +478,7 @@ textarea.contact-form-text {
 /*Animation will the lettres in each span and make it so it reaches a certain height and then comes back.*/
 .wavy span {
   position: relative;
+  margin: 30px;
   display: inline-block;
   color: #bca993;
   font-size: 2em;
