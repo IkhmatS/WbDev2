@@ -1,5 +1,6 @@
 <!-- @format -->
-
+<!--Name: Ikhmat Salami • Course: Web Dev • Teacher: Mr. Hardman • School: PTEC •
+Date Last Modified: 6/6/2022-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,25 +8,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Contact Info</title>
-    <link
+
+    <title>Contact Us</title>
+    <!--<link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
-    />
+    />-->
   </head>
   <body>
-    <section class="contact">
-      <div class="contact-content">
-        <h2>Contact Info</h2>
-        <p>
+    <header>
+      <!--This is the main page of library/book store, the content is where the general conent is put.-->
+      <nav>
+        <label class="logo">LBH</label>
+        <input id="search-bar" type="text" placeholder="Search.." />
+        <ul>
+          <!--These are where all the links are placed for the nav bar, this will be put across all pages of the site.-->
+          <a href="index.html" class="nav-link"><li>Home</li></a>
+          <a href="books.html" class="nav-link"><li>Books</li></a>
+          <a href="events.html" class="nav-link"><li>Events</li></a>
+          <a href="contact.html" class="nav-link"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <!--Credit to DarkMode, W3schools and CodingFlag-->
+    <div class="contact-section">
+      <!--Contact title with a little descprition at the bottom to explain why this page has been made availible to them.-->
+      <h1>Contact Us</h1>
+      <p class="contact-para">
+        Contact us if you have any questions, concerns or suggestions. <br />
+        We'd like to hear your thoughts!
+      </p>
+      <form class="contact-form" action="index.html" method="post">
+        <input
+          type="text"
+          class="contact-form-text"
+          placeholder="Your Name"
+          required
+        />
+        <!--Creates a section for the email and others to be entered. All information asked to be entered is required if they do not fill it out there will be a massge shown telling them that the field is required. This only shows for the boxes that have no imput.-->
+        <!--They must enter their or whatever email they want to use-->
+        <input
+          type="email"
+          class="contact-form-text"
+          placeholder="Your Email"
+          required
+        />
+        <!--They are required to enter their or whatever phone number to be able to get in touch later on.-->
+        <input
+          type="phone"
+          class="contact-form-text"
+          placeholder="Your Phone"
+          required
+        />
+        <!--Textarea is used to add a multi line text input which allows everyone to add (in our case) a comment, concern or question in the box and send it-->
+        <textarea
+          class="contact-form-text"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" class="contact-form-btn" value="Send" />
+      </form>
+    </div>
+    <div class="wavy">
+      <span style="--i: 1">L</span>
+      <span style="--i: 2">O</span>
+      <span style="--i: 3">A</span>
+      <span style="--i: 4">D</span>
+      <span style="--i: 5">I</span>
+      <span style="--i: 6">N</span>
+      <span style="--i: 7">G</span>
+    </div>
+    <!--<section class="contact">
+      <div class="content">
+        <h2 class="ContacTitle">Contact Info</h2>
+        <p class="para">
           Pleases send up an email or put your email in the form if you have any
           questions are concerns.
         </p>
       </div>
       <div class="container">
-        <div class="contact-info">
+        <div class="contactInfo">
           <div class="box">
             <div class="icon">
               <i class="fa fa-map-pin" aria-hidden="true"></i>
@@ -56,29 +120,29 @@
               </div>
             </div>
           </div>
-          <!---Form-->
-          <div class="contct-form">
+          <!-Form-->
+    <!--- <div class="contctForm">
             <form>
-              <h2>Send a message</h2>
-              <div class="input-box">
+              <h2 class="formTitle">Send a message</h2>
+              <div class="inputBox">
                 <input type="text" name="" required="required" />
                 <span>Full Name</span>
               </div>
-              <div class="input-box">
+              <div class="inputBox">
                 <input type="text" name="" required="required" />
                 <span>Email</span>
               </div>
-              <div class="input-box">
+              <div class="inputBox">
                 <textarea required="required"></textarea>
                 <span>Type Your Message.....</span>
               </div>
-              <div class="input-box">
+              <div class="inputBox">
                 <input type="submit" name="" value="Send" />
               </div>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </section>--->
   </body>
 </html>

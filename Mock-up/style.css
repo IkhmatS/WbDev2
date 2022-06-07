@@ -36,7 +36,6 @@ nav ul {
   color: white;
 }*/
 .nav-link {
-  float: left;
   display: inline-block;
   line-height: 70px;
   text-align: center;
@@ -343,6 +342,141 @@ div.descri-tion {
   transform: scale(1.2);
 }
 
+/*Contact form for the new Page*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+/*Style for the paragraph under the Contact Us title */
+#contact-para {
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  /*This animation is a typewriting animations where it will have the effect of typing. It will adjusts as it sizes differently. The text will dissapear then comeback when it is its turn to pop up. They will go after one another until the all the sentences have been typed out.*/
+  /*Animation has not been able to work due to some complications regarding the code used*/
+  animation: type 3s steps(22);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Times New Roman", Times, serif;
+  border-right: 4px solid;
+  width: 22ch;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 22ch;
+  }
+}
+
+/*Contact Us title that presents the pages function for all users with a little descrption.*/
+.contact-section {
+  padding: 40px 0;
+  background-color: #5c5b45;
+}
+.contact-section h1 {
+  text-align: center;
+  color: #9e9d82;
+  line-height: normal;
+  letter-spacing: 10px;
+  word-spacing: 20px;
+}
+/*Added to make it pop a little, so it can be distingushed form the background*/
+.border {
+  width: 100px;
+  height: 10px;
+  background: #5c5b45;
+  margin: 40px auto;
+}
+/*Contact Form start*/
+/*Contact form will placed under the nav*/
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+/*Contact form text used for adding your personal information*/
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #bca993;
+  padding: 20px 40px;
+  outline: none;
+  color: #5c5b45;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #9e9d82;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+/*Contact button on the bottom of the message section, also known as the send button. This button does not have any backend program for it to function.*/
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #9e9d82;
+  color: #5c5b45;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  transition: ease-in-out;
+  font-size: 15px;
+  outline: none;
+  border: 3px solid #9e9d82;
+  position: relative;
+  z-index: 1;
+}
+/*Send button to change text color when the cursor hovers over it. It will to change to a lighter color to enhance visibility.*/
+.contact-form-btn:hover {
+  background: #9e9d82;
+  box-shadow: inset 300px 0 0 0 #5c5b45;
+  cursor: pointer;
+  color: rgb(223, 222, 222);
+}
+/*The before effect of the button*/
+.contact-form-btn:before {
+  transition: 0.5s all ease;
+  opacity: 0;
+}
+/*This is wave transition, credit to Online Tutorials for their animation*/
+.wavy {
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0, 2));
+}
+/*Animation will the lettres in each span and make it so it reaches a certain height and then comes back.*/
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #bca993;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
 /*Button code for the help button*/
 /*#help-btn {
   display: flex;
@@ -389,7 +523,7 @@ div.descri-tion {
   z-index: -1;
 }*/
 /*Contact page information*/
-* {
+/*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -404,6 +538,125 @@ div.descri-tion {
   align-items: center;
   flex-direction: column;
   background-color: #5c5b45;
-  background: url(mockImgs/flowers.jpg);
+  /*background: url(mockImgs/flowers.jpg);
   background-size: cover;
+}*/
+/*.contact .content {
+  max-width: 800px;
+  text-align: center;
 }
+.ContacTitle {
+  font-size: 36px;
+  font-weight: 500;
+  color: #bca993;
+}
+.para {
+  font-weight: 10px;
+  color: #efefef;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #bca993;
+}
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #9e9d82;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #5c5b45;
+}
+.formTitle {
+  font-size: 30px;
+  color: #9e9d82;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #5c5b45;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: rgb(112, 86, 57);
+  font-size: 16;
+  transform: Ytranslate(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #333;
+  color: #9e9d82;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactInfo {
+    margin-bottom: 40px;
+  }
+  .container .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+}*/
